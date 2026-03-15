@@ -1,28 +1,30 @@
-# Week 2: PyTorch 推理与现代 matcher
+# Week 2：几何变换模型与鲁棒估计
 
-**本周目标：** 让 PyTorch 不再成为阅读障碍，理解现代 matcher 的输入输出、patch 推理和张量流。
+**本周目标：**
+理解从 correspondence 到变换模型的核心算法链：
 
-## 本周建议节奏
+- translation
+- affine
+- homography
+- 为什么需要更灵活的模型
+- 为什么匹配点不能直接拿来拟合，必须要有鲁棒估计（RANSAC）
 
-- 每天 2 小时
-- 先抓主线，不逐行抠代码
-- 每天结束要有书面输出（3~5 条笔记或一张流程图）
-
-## 每日主题
-
-- Day 1: PyTorch 张量、shape、device — 系统补一下 B,C,H,W、cpu/cuda、model.eval/no_grad。
-- Day 2: Dataset / DataLoader — 读懂 __getitem__、batch、collate、patch dataset。
-- Day 3: 传统特征与现代 matcher 对比 — 建立 SIFT/ORB 与 SuperPoint/LoFTR/RoMa 的代际差异。
-- Day 4: LightGlue / LoFTR / RoMa — 分别理解它们大概怎么做匹配、输出什么、适用何处。
-- Day 5: 读第3名和第5名推理代码 — 重点看 patch、预处理、matcher 输入输出、结果汇总。
-- Day 6: patch inference 基础 — 理解大图为什么切块、为什么 overlap、边缘为什么降权。
-- Day 7: 本周复盘 — 输出一张张量流图：图像→tensor→model→prediction→merge。
 ## 本周核心问题
-
-- 传统特征与现代 matcher 的差别是什么？
-- PyTorch 推理代码里最关键的数据流是什么？
-- 为什么遥感大图经常必须 patch inference？
+- 什么情况下全局平移够用？
+- 什么情况下必须引入 affine / homography？
+- 为什么匹配点中会有错配？
+- RANSAC 到底解决了什么问题？
 
 ## 建议最低完成线
+- 能解释 translation / affine / homography 的表达能力差异
+- 能用自己的话解释 RANSAC 的作用
+- 能看懂一个“有/无 RANSAC”的最小对比例子
 
-- 至少完成：看懂 1 个推理脚本 + 搞懂 matcher 输出和 tensor shape。
+## 每日主题
+- Day 1：translation 作为最简单的 warp model
+- Day 2：affine 为什么比 translation 强
+- Day 3：homography 再往前多走了一步
+- Day 4：为什么 correspondence 里会有 outlier
+- Day 5：RANSAC 到底在做什么
+- Day 6：把几何模型映射回 SpaceNet 代码
+- Day 7：本周总结与模型比较
