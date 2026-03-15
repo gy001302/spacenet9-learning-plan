@@ -111,3 +111,9 @@ SpaceNet 方案与源码理解
 - 看懂为什么会有 RANSAC、matcher、sparse→dense、local reg
 - 看懂为什么第 2 名方案会引入 segmentation / height prior
 - 具备继续深入看 SpaceNet 代码和改造 baseline 的能力
+
+
+## 书籍与参考资料
+
+- 见 `BOOKS-AND-REFERENCES.md`
+- 其中区分了：主线教材、辅助教材、查阅书、模型/论文官方入口

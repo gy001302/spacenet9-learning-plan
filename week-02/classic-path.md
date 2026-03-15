@@ -33,3 +33,12 @@
 - 为什么最简单方案会从对应点直接估计 transform
 - 为什么强方案会非常强调 robust fitting
 - 为什么“有 matcher”不等于“可以直接注册成功”
+
+## 建议搭配书籍
+
+- **Szeliski《Computer Vision: Algorithms and Applications》**
+  - 主页：https://szeliski.org/Book/
+  - 对这一周非常有帮助，因为几何变换与配准在书里有很强的总览视角。
+- **Hartley & Zisserman《Multiple View Geometry in Computer Vision》**
+  - 图书页：https://www.robots.ox.ac.uk/~vgg/hzbook/
+  - 作为高阶几何查阅书，不要求现在精读，但后面查 homography 时很有价值。

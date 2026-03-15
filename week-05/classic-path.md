@@ -42,3 +42,12 @@
 - keypoint detector
 - baseline training script
 - patch inference 代码
+
+## 建议搭配书籍 / 文档
+
+- **PyTorch 官方教程总入口**
+  - https://pytorch.org/tutorials/
+  - 这是这一周的真正主教材。
+- **Deep Learning with PyTorch（官方书）**
+  - 出版页：https://www.manning.com/books/deep-learning-with-pytorch
+  - 这一周可作为延伸阅读，但不替代官方 beginner 教程。

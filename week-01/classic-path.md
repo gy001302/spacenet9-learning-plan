@@ -35,3 +35,12 @@
 - `transform`
 - `registration`
 这类变量和模块为什么会存在。
+
+## 建议搭配书籍
+
+- **Szeliski《Computer Vision: Algorithms and Applications》**
+  - 主页：https://szeliski.org/Book/
+  - 这一周用它做“大图景参考”，帮助你把 registration 放回 CV 全局框架中。
+- **Gonzalez & Woods《Digital Image Processing》**
+  - 作者主页：https://www.imageprocessingplace.com/
+  - 这一周不作为主教材，只在需要补图像表示/基础处理直觉时查阅。
